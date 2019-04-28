@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.364" y1="1" x2="0.456" y2="0.314" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#467d6a"/>
+      <stop offset="0.571" stop-color="#0b434a"/>
+      <stop offset="1" stop-color="#002129"/>
+    </linearGradient>
+    <clipPath id="clip-search_3">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="search_3" data-name="search – 3" clip-path="url(#clip-search_3)">
+    <rect width="375" height="812" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

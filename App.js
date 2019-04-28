@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import { Button, TouchableOpacity, Platform, StyleSheet, TextInput, Text, View, Image} from 'react-native';
+import { ImageBackground, TouchableOpacity, Platform, StyleSheet, TextInput, Text, View, Image} from 'react-native';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,8 +20,10 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View backgroundColor="green" style={styles.container}>
-        <Image
+      <View style={styles.container}>
+        <ImageBackground source={require('./img/BG.png')} style={{ position: 'absolute', width: '100%', height: '100%' }} />
+        {/* <Image source={require('./img/BG.svg')} style={{ position: 'absolute', width: '100%', height: '100%' }} /> */}
+        <Image 
           style={{ width: 300, height: 200 }}
           source={require('./img/logo.png')}
           />
@@ -117,12 +119,12 @@ const styles = StyleSheet.create({
   },
   textfield: {
     fontSize: 20,
-    height: 50,
+    // height: 10,
     // width: 100 + "%",
-    marginHorizontal: 50,
+    // marginHorizontal: 50,
     // backgroundColor: "rgb(255,255,255)",
-    marginBottom: 10,
-    paddingBottom: 30,
+    // marginBottom: 10,
+    // paddingBottom: 10,
     textAlign: 'center',
     justifyContent: 'center',
     alignContent: 'center',
