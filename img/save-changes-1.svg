@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="232" height="72" viewBox="0 0 232 72">
+  <defs>
+    <filter id="Rectangle_1" x="0" y="9" width="232" height="63" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.416"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="save-changes" transform="translate(-72 -536)">
+    <g transform="matrix(1, 0, 0, 1, 72, 536)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="214" height="45" rx="22.5" transform="translate(9 15)" fill="#5f8318"/>
+    </g>
+    <text id="Save_Changes" data-name="Save Changes" transform="translate(122 580)" fill="#faf5f5" font-size="20" font-family="LucidaGrande, Lucida Grande"><tspan x="0" y="0">Save</tspan><tspan y="0" font-family="STIXIntegralsD-Regular, STIXIntegralsD"> </tspan><tspan y="0">Changes</tspan></text>
+  </g>
+</svg>
