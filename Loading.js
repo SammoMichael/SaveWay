@@ -18,6 +18,11 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class Loading extends Component {
+    componentDidMount() {
+        setTimeout(() => this.props.navigation.navigate('login'), 3000)
+        // setTimeout(function () {() => this.props.navigation.navigate('login')}, 3000);
+    }
+    
     render() {
         return (
             <View style={styles.container}>

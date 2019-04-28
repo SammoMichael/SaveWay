@@ -52,20 +52,29 @@ export default class Login extends Component<Props> {
 
           // padding={}
         />
-        <TouchableOpacity style={styles.underline} ><Text>Forgot Username/Password?</Text></TouchableOpacity>
+        <TouchableOpacity style={styles.underline} ><Text style={{ color: 'white', textDecorationLine: 'underline'}}>Forgot Username/Password?</Text></TouchableOpacity>
         {/* <Button color="#841584" title="Login"></Button>
         <Button color="#841584" title="Sign Up"></Button> */}
         <TouchableOpacity
-          style={styles.loginScreenButton}
+          // style={styles.loginScreenButton}
           onPress={() => this.props.navigation.navigate('route')}
-          underlayColor='#fff'>
-          <Text style={styles.loginText}>Login</Text>
+          // underlayColor='#fff'
+          >
+          {/* <Text style={styles.loginText}>Login</Text> */}
+          <Image
+            // style={{ width: 300, height: 200 }}
+            source={require('./img/login.png')}
+          />
         </TouchableOpacity>
         <TouchableOpacity
-          style={styles.signupScreenButton}
-          onPress={() => this.props.navigation.navigate('route')}
-          underlayColor='#fff'>
-          <Text style={styles.loginText}>Sign Up</Text>
+          // style={styles.signupScreenButton}
+          onPress={() => this.props.navigation.navigate('route')}>
+          {/* // underlayColor='#fff'> */}
+          {/* <Text style={styles.loginText}>Sign Up</Text> */}
+          <Image
+            // style={{ width: 300, height: 200 }}
+            source={require('./img/sign-up.png')}
+          />
         </TouchableOpacity>
       </View>
     );

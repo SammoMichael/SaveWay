@@ -55,17 +55,21 @@ export default class Route extends Component{
                 {/* <Button color="#841584" title="Login"></Button>
         <Button color="#841584" title="Sign Up"></Button> */}
                 <TouchableOpacity
-                    style={styles.loginScreenButton}
+                    // style={styles.savewayButton}
                     onPress={() => this.props.navigation.navigate('screen3')}
                     underlayColor='#fff'>
-                    <Text style={styles.loginText}>Login</Text>
+                     <Image
+                    // style={{ width: 300, height: 200 }}
+                    source={require('./img/save.svg')}
+                />
+                    {/* <Text style={styles.loginText}>Login</Text> */}
                 </TouchableOpacity>
-                <TouchableOpacity
+                {/* <TouchableOpacity
                     style={styles.signupScreenButton}
                     // onPress={() => navigate('HomeScreen')}
                     underlayColor='#fff'>
                     <Text style={styles.loginText}>Sign Up</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
         );
     }
@@ -77,18 +81,19 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    loginScreenButton: {
+    // savewayButton: {
 
-        marginRight: 40,
-        marginLeft: 40,
-        marginTop: 10,
-        paddingTop: 10,
-        paddingBottom: 10,
-        backgroundColor: '#5F8318',
-        borderRadius: 15,
-        borderWidth: 1,
-        // borderColor: '#fff'
-    },
+    //     marginRight: 40,
+    //     marginLeft: 40,
+    //     marginTop: 10,
+    //     paddingTop: 10,
+    //     paddingBottom: 10,
+    //     backgroundColor: '#5F8318',
+    //     borderRadius: 15,
+    //     borderWidth: 1,
+    //     width: 200,
+    //     // borderColor: '#fff'
+    // },
     signupScreenButton: {
         marginRight: 40,
         marginLeft: 40,
