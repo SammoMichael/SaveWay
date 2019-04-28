@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { ImageBackground, TouchableOpacity, Platform, StyleSheet, TextInput, Text, View, Image } from 'react-native';
+import { ImageBackground, Picker, TouchableOpacity, Platform, StyleSheet, TextInput, Text, View, Image } from 'react-native';
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -16,30 +16,98 @@ const instructions = Platform.select({
         'Shake or press menu button for dev menu',
 });
 
-export default class Screen3 extends Component {
+export default class Info extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <ImageBackground source={require('./img/BG.png')} style={{ position: 'absolute', width: '100%', height: '100%' }} />
                 {/* <Image source={require('./img/BG.svg')} style={{ position: 'absolute', width: '100%', height: '100%' }} /> */}
                 <Image
-                    style={{ width: 300, height: 200 }}
-                    source={require('./img/logo.png')}
+                    source={require('./img/General.png')}
                 />
+                <Image
+                    source={require('./img/Line 1.png')}
+                >
+
+                </Image>
+                <Image
+
+                    // style={{ width: 300, height: 200 }}
+                    source={require('./img/Line 1.png')}
+                />
+                <Image
+                    // style={{ width: 300, height: 200 }}
+                    source={require('./img/Line 1.png')}
+                />
+
                 {/* <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text> */}
                 <TextInput
                     style={styles.textfield}
                     editable
-                    backgroundColor="white"
-                    placeholder="Username"
-                    // borderRadius={15}
+                    borderColor="green"
+
+                    // backgroundColor="white"
+                    placeholder="First Name"
+                    color="white"
+                    borderColor="red"
+                    borderRadius={15}
                     height={5 + '%'}
                     width={80 + '%'}
                     marginBottom={10 + '%'}
                 />
                 <TextInput
+                    style={styles.textfield}
+                    editable
+                    color="white"
+
+                    borderColor="green"
+                    // backgroundColor="white"
+                    placeholder="Last Name"
+                    // borderRadius={15}
+                    height={5 + '%'}
+                    width={80 + '%'}
+                    marginBottom={10 + '%'}
+                />
+                {/* <Picker
+                    // selectedValue={this.state.language}
+                    style={{ height: 50, width: 100 }}
+                    // onValueChange={(itemValue, itemIndex) =>
+                    //     this.setState({ language: itemValue })
+                    // }
+                    >
+                    <Picker.Item label="Gender" value="gender" />
+                    <Picker.Item label="Male" value="male" />
+                    <Picker.Item label="Female" value="female" />
+                    <Picker.Item label="Other" value="other" />
+                </Picker>
+                <Picker
+                    // selectedValue={this.state.language}
+                    style={{ height: 50, width: 100 }}
+                    // onValueChange={(itemValue, itemIndex) =>
+                    //     this.setState({ language: itemValue })
+                    // }
+                    > */}
+                {/* <Picker.Item label="18" value="java" />
+                    <Picker.Item label="19" value="js" />
+                    <Picker.Item label="20" value="js" />
+                    <Picker.Item label="21" value="js" />
+                    <Picker.Item label="22" value="js" />
+                    <Picker.Item label="23" value="js" />
+                    <Picker.Item label="24" value="js" />
+                    <Picker.Item label="25" value="js" />
+                    <Picker.Item label="26" value="js" />
+                    <Picker.Item label="27" value="js" />
+                    <Picker.Item label="28" value="js" />
+                    <Picker.Item label="29" value="js" />
+                    <Picker.Item label="30" value="js" />
+                    <Picker.Item label="31" value="js" />
+                    <Picker.Item label="32" value="js" />
+                    <Picker.Item label="33" value="js" />
+                </Picker> */}
+
+                {/* <TextInput
                     style={styles.textfield}
                     editable
                     backgroundColor="white"
@@ -47,24 +115,30 @@ export default class Screen3 extends Component {
                     placeholder="Password"
                     height={5 + '%'}
                     width={80 + '%'}
-                    marginBottom={10 + '%'}
+                    marginBottom={10 + '%'} 
 
-                // padding={}
-                />
-                <TouchableOpacity style={styles.underline} ><Text color="white">Forgot Username/Password?</Text></TouchableOpacity>
+                />*/}
                 {/* <Button color="#841584" title="Login"></Button>
         <Button color="#841584" title="Sign Up"></Button> */}
-                <TouchableOpacity
+                {/* <TouchableOpacity
                     style={styles.loginScreenButton}
                     onPress={() => this.props.navigation.navigate('screen4')}
                     underlayColor='#fff'>
                     <Text style={styles.loginText}>Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
+                </TouchableOpacity> */}
+                {/* <TouchableOpacity
                     style={styles.signupScreenButton}
                     // onPress={() => navigate('HomeScreen')}
                     underlayColor='#fff'>
                     <Text style={styles.loginText}>Sign Up</Text>
+                </TouchableOpacity> */}
+                <TouchableOpacity
+                    onPress={() => this.props.navigation.navigate('vehicle')}
+                >
+                    <Image
+                        // style={{ width: 300, height: 200 }}
+                        source={require('./img/save-changes.png')}
+                    />
                 </TouchableOpacity>
             </View>
         );

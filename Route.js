@@ -23,13 +23,21 @@ export default class Route extends Component{
                 <ImageBackground source={require('./img/BG.png')} style={{ position: 'absolute', width: '100%', height: '100%' }} />
                 {/* <Image source={require('./img/BG.svg')} style={{ position: 'absolute', width: '100%', height: '100%' }} /> */}
                 <Image
-                    style={{ width: 300, height: 200 }}
-                    source={require('./img/logo.png')}
+                    style={{ position: 'relative' }}
+                    source={require('./img/profile.png')}
+                />
+                <Image
+                    style={{ position: 'relative' }}
+                    source={require('./img/from-1.png')}
+                />
+                <Image
+                    style={{ position: 'relative' }}
+                    source={require('./img/to.png')}
                 />
                 {/* <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text> */}
-                <TextInput
+                {/* <TextInput
                     style={styles.textfield}
                     editable
                     backgroundColor="white"
@@ -38,8 +46,8 @@ export default class Route extends Component{
                     height={5 + '%'}
                     width={80 + '%'}
                     marginBottom={10 + '%'}
-                />
-                <TextInput
+                /> */}
+                {/* <TextInput
                     style={styles.textfield}
                     editable
                     backgroundColor="white"
@@ -48,19 +56,17 @@ export default class Route extends Component{
                     height={5 + '%'}
                     width={80 + '%'}
                     marginBottom={10 + '%'}
-
-                // padding={}
-                />
-                <TouchableOpacity style={styles.underline} ><Text color="white">Forgot Username/Password?</Text></TouchableOpacity>
+                /> */}
+                {/* <TouchableOpacity style={styles.underline} ><Text color="white">Forgot Username/Password?</Text></TouchableOpacity> */}
                 {/* <Button color="#841584" title="Login"></Button>
         <Button color="#841584" title="Sign Up"></Button> */}
                 <TouchableOpacity
                     // style={styles.savewayButton}
-                    onPress={() => this.props.navigation.navigate('screen3')}
+                    onPress={() => this.props.navigation.navigate('info')}
                     underlayColor='#fff'>
                      <Image
                     // style={{ width: 300, height: 200 }}
-                    source={require('./img/save.svg')}
+                    source={require('./img/SaveWay.png')}
                 />
                     {/* <Text style={styles.loginText}>Login</Text> */}
                 </TouchableOpacity>

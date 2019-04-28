@@ -3,8 +3,8 @@ import { View, Text, ImageBackground } from "react-native";
 import Loading from './Loading'
 import Login from './Login';
 import Route from './Route';
-import Screen3 from './Screen3'
-import Screen4 from './Screen4'
+import Info from './Info'
+import Vehicle from './Vehicle'
 import { TouchableOpacity } from "react-native-gesture-handler";
 import {
     createStackNavigator,
@@ -18,8 +18,8 @@ const RootStack = createStackNavigator({
     loading: Loading,
     login: Login,
     route: Route,
-    screen3: Screen3,
-    screen4: Screen4
+    info: Info,
+    vehicle: Vehicle
 });
 
 const App = createAppContainer(RootStack);
